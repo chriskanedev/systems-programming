@@ -1,10 +1,12 @@
 #include <stdio.h>
 
 int main() {
-    int n = 100;
+    int n;
     int i;
 
-    printf("\n");
+    printf("\nEnter the number of terms to FizzBuzz: ");
+    scanf("%d", &n);
+    n += 1;
     for (i = 1; i < n; i++) {
         if (((i%3) == 0) && ((i%5) == 0)) {
             printf("FizzBuzz ");
